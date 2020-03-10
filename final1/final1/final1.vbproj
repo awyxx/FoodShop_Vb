@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C834E059-B060-4CBC-8CE7-E726BB9493A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>final1.My.MyApplication</StartupObject>
+    <RootNamespace>final1</RootNamespace>
+    <AssemblyName>final1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>final1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>final1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon-png-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\104-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icons-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6447-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8c8d8b7f26bfd7e065f6fc82a4cc13e.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\393a7d8e436bccc3aedfd43865b48890---cone-de-cadeado-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cidades1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cddaserio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigmac1e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McDonalds-logo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30online_v3_8442682745d441fdf9cdc4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pizza_Hut_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sushi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\japanese-letter-png-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donuts-mania.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcpeq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mcpeq1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkish-doner-kebab-kebab-9ba1e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kebab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizzagrande.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuggets.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d6c9e172c97e70e3662f401605d89c8a-donut-de-morango-com-granulado-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kfc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_Uz3Jn8wltR4y5OvIaWpqo6NHXQmk1L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5111695393_58de055ddd_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6fd217c90273f52598780cbf93877b68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coca cola logo 260x260-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93ee4b28bad1f421462a3a55227b026e-754x394.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ice-Cream-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitoque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receitas-de-saladas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutterstock_394680466.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\452522.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc54fe11be1746f8b193dfbb85c3cd26-ilustra----o-de-bolo-de-anivers--rio-de-tr-s-velas-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c6539229ad5c57c313d95711a1e676db-logo-hamb-rguer-fast-food-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21125.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa_de_Portugal_-_Distritos_plain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1013ce3cf5903ef5afe01f0fd443dc03-design-de-pizza-inteira-colorida-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-x-png-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem Título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trashhh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
